@@ -114,10 +114,10 @@ h4, h5, h6 {
 }
 
 #projects .panel-heading.proj-1 {
-  background-image: url('img/SWS_Conclusion.png');
+  background-image: url('../img/SWS_Conclusion.png');
 }
 #projects .panel-heading.proj-2 {
-  background-image: url('img/Image_Example_NCM.png');
+  background-image: url('../img/Image_Example_NCM.png');
 }
 
 /*#projects .panel-heading.proj-3 {
