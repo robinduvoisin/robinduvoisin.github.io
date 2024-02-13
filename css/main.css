@@ -114,41 +114,16 @@ h4, h5, h6 {
 }
 
 #projects .panel-heading.proj-1 {
-  background-image: url(https://unsplash.it/300/200);
+  background-image: url('img/SWS_Conclusion.png');
 }
 #projects .panel-heading.proj-2 {
-  background-image: url(https://unsplash.it/300/200);
+  background-image: url('img/Image_Example_NCM.png');
 }
-#projects .panel-heading.proj-3 {
+
+/*#projects .panel-heading.proj-3 {
   background-image: url(https://unsplash.it/300/200);
-}
-#projects .panel-heading.proj-4 {
-  background-image: url(https://unsplash.it/300/200);
-}
-#projects .panel-heading.proj-5 {
-  background-image: url(https://unsplash.it/300/200);
-}
-#projects .panel-heading.proj-6 {
-  background-image: url(https://unsplash.it/300/200);
-}
-#projects .panel-heading.proj-7 {
-  background-image: url(https://unsplash.it/300/200);
-}
-#projects .panel-heading.proj-8 {
-  background-image: url(https://unsplash.it/300/200);
-}
-#projects .panel-heading.proj-9 {
-  background-image: url(https://unsplash.it/300/200);
-}
-#projects .panel-heading.proj-10 {
-  background-image: url(https://unsplash.it/300/200);
-}
-#projects .panel-heading.proj-11 {
-  background-image: url(https://unsplash.it/300/200);
-}
-#projects .panel-heading.proj-12 {
-  background-image: url(https://unsplash.it/300/200);
-}
+}*/
+
 
 p, table, tr, td, ul, li, blockquote, nav, a, footer, dl, dt, dd {
   font-size: 1rem;
