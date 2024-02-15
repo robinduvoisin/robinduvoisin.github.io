@@ -114,12 +114,14 @@ h4, h5, h6 {
 }
 
 #projects .panel-heading.proj-1 {
-  background-image: url('../img/CN_RichClub.png');
+  background-image: url('../img/CN_Network.png');
 }
 #projects .panel-heading.proj-2 {
   background-image: url('../img/SWS_Conclusion.png');
 }
-
+#projects .panel-heading.proj-4 {
+  background-image: url('../img/Autonomyo_sarl.png');
+}
 #projects .panel-heading.proj-3 {
   background-image: url('../img/Image_Example_NCM.png');
 }
