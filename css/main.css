@@ -24,7 +24,7 @@ body {
 }
 
 .bright-blue {
-  color: var(--bright-blue);
+  color: #20364c /*var(--bright-blue)*/;
 }
 
 .white {
@@ -32,7 +32,7 @@ body {
 }
 
 .badge-bright-blue {
-  background: var(--bright-blue);
+  background: #20364c/*var(--bright-blue)*/;
 }
 
 .pointer {
@@ -181,13 +181,13 @@ blockquote footer {
 
 /* Links */
 #main-container a {
-  color: #1585cf;
+  color: #20364c/*#1585cf*/;
   font-weight: 500;
 }
 
 #main-container a:hover {
-  color: #1585cf;
-  border-bottom: 1px dashed #1585cf;
+  color: #20364c/*#1585cf*/;
+  border-bottom: 1px dashed #20364c/*#1585cf*/;
   text-decoration: none;
   padding-bottom: 2px;
 }
@@ -293,14 +293,14 @@ nav {
 
 #link-to-docs,
 #link-to-teaching-philosophy {
-  color: #1585cf;
+  color: #20364c/*#1585cf*/;
 }
 
 #link-to-docs:hover,
 #link-to-docs:active,
 #link-to-docs:visited,
 #link-to-docs:focus {
-  border: 1px solid #1585cf !important;
+  border: 1px solid #20364c/*#1585cf*/ !important;
   padding-bottom: 6px !important;
   background: transparent !important;
 }
@@ -342,7 +342,7 @@ footer {
 }
 
 .social-icons li a {
-  color: #1585cf;
+  color: #20364c/*#1585cf*/;
 }
 
 .social-icons li a:hover {
@@ -446,7 +446,7 @@ dd {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #1585cf;
+  background-color: #20364c/*#1585cf*/;
   color: white;
   padding: 12px 6px 12px 6px;
   border-radius: .25rem 0 0 .25rem;
@@ -455,6 +455,6 @@ dd {
 }
 
 #topper:hover {
-  background-color: #1585cf;
+  background-color: #20364c/*#1585cf*/;
   opacity: .8;
 }
