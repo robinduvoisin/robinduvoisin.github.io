@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Metadata for the Webpage -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robin Duvoisin</title>
+
+  <!-- Favicons -- We recommend this site for generating favicons: https://www.favicon-generator.org/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+  <!-- Bootstrap CSS files-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  <!-- jQuery UI CSS (optional) -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+  <!-- Google web fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Web Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <!-- Academicons Courtesy of https://jpswalsh.github.io/academicons/ -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+  <!-- Local styles -->
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+      .justified {
+        text-align: justify;
+      }
+  </style>
+</head>
+
+<body>
+
+  <!-- navbar include -->
+  <div id="navbar-include"></div>
+
+  <div class="spacer-div-3 hidden-xs hidden-xs"></div>
+
+  <!-- Main content    -->
+  <div id="main-container" class="container">
+
+    <div class="row">
+      <div class="col-sm-12">
+              
+        <h1>DNA Mutation Mechansims as Structure for a new Model of Computation</h1>
+
+        <p class="justified">In the lecture given by Prof. Cook, we were tasked with developing our own model of computation.
+          I simplified the rules describing DNA mutations to create a model capable of performing various computations, such as addition or squaring numbers.
+          The project required not only coming up with an original, simple idea without fully knowing the model's limitations but also 
+          experimenting with it extensively to understand its unique characteristics.
+
+          <p><em>Grade : ? </em>
+        <p class="text-left">
+          <a id="link-to-docs" role="button" class="btn btn-default" href="pdf/" target="_blank">
+            <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; Read More
+          </a>
+        </p>
+      </div>
+      <div class="col-sm-6">
+          <img class="center-block img img-responsive" src="img/Mutations_final.jpg"
+            alt="CN_network">
+
+          <p id="title">DNA Mutation Mechansims<br>
+          </p>
+      </div>
+      <div class="col-sm-4">
+          <img class="center-block img img-responsive" src="img/Simple_example_b"
+            alt="CN_cells">
+          <p id="title">Simple Computation example<br>
+          </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <h5>Personal Feedback</h5>
+
+        <p>This project began with many trials and errors, and several model ideas were abandoned along the way.
+          As with any project, the path seems clear once it's completed, but at the outset, 
+          every step forward feels like venturing into the unknown, hoping not to encounter a dead end that would undermine my initial model idea.
+        </p>
+          </p>       
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Back-to-top button -->
+  <a role="button" id="topper" data-toggle="tooltip" data-placement="top" title="Top" class="btn scroll-link" href="#top"><i class="fa fa-fw fa-2x fa-caret-up" aria-hidden="true"></i></a>
+
+  <!-- footer include -->
+  <div w3-include-html="footer.html"></div>
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Bootstrap JS Library -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+  <!-- html file include script | used for navbar and footer -->
+  <script src="js/w3data.js"></script>
+
+  <!-- Local scripts -->
+  <script src="js/main.js"></script>
+
+  <script>
+    $(document).ready(function() {
+
+      $("#navbar-include").load("navbar.html", function() {
+
+        $("#home").removeClass("active");
+
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>
