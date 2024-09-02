@@ -114,6 +114,12 @@ h4, h5, h6 {
 }
 
 #projects .panel-heading.proj-1 {
+  background-image: url('../img/InformationTheory.png');
+}
+#projects .panel-heading.proj-1 {
+  background-image: url('../img/Simple_example_b.jpg');
+}
+#projects .panel-heading.proj-1 {
   background-image: url('../img/CN_Network.png');
 }
 #projects .panel-heading.proj-2 {
