@@ -113,22 +113,28 @@ h4, h5, h6 {
   min-height: 200px;
 }
 
-#projects .panel-heading.proj-1 {
-  background-image: url('../img/InformationTheory.png');
+#projects .panel-heading.proj-Thesis {
+  background-image: url('../img/Thesis_Schematic.png');
 }
-#projects .panel-heading.proj-2 {
+#projects .panel-heading.proj-Stanford {
+  background-image: url('../img/Brain_GPT_2.png');
+}
+#projects .panel-heading.proj-Pau {
+  background-image: url('../img/Full_Asymptotic_VWC.png');
+}
+#projects .panel-heading.proj-MoC {
   background-image: url('../img/Mutations_final.jpg');
 }
-#projects .panel-heading.proj-3 {
+#projects .panel-heading.proj-CN {
   background-image: url('../img/CN_Network.png');
 }
-#projects .panel-heading.proj-4 {
+#projects .panel-heading.proj-Birdsong {
   background-image: url('../img/SWS_Conclusion.png');
 }
-#projects .panel-heading.proj-5 {
+#projects .panel-heading.proj-Autonomyo {
   background-image: url('../img/Autonomyo_sarl.jpg');
 }
-#projects .panel-heading.proj-6 {
+#projects .panel-heading.proj-Bachelor {
   background-image: url('../img/Image_Example_NCM.png');
 }
 /*#projects .panel-heading.proj-3 {
