@@ -35,6 +35,51 @@
       .justified {
         text-align: justify;
       }
+
+      .thesis-section {
+        margin-bottom: 3rem;
+      }
+
+      .thesis-section.compact {
+        margin-bottom: 2rem;
+      }
+
+      .thesis-section.compact h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem !important;
+      }
+
+      .thesis-meta {
+        margin-bottom: 0;
+      }
+
+      .thesis-meta dt {
+        color: var(--maroon);
+      }
+
+      .thesis-figure {
+        margin: 0 0 3rem;
+      }
+
+      .thesis-figure img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .thesis-figure figcaption {
+        color: slategray;
+        font-size: 0.9rem;
+        margin-top: 0.75rem;
+      }
+
+      .thesis-outcome-label {
+        color: slategray;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin: 1.5rem 0 0.75rem;
+      }
   </style>
 </head>
 
@@ -51,13 +96,50 @@
     <div class="row">
       <div class="col-sm-12">
               
-        <h1>Information Theory Limits for Neuromorphic Energy Efficiency</h1>
+        <section class="thesis-section">
+          <h1>Minimally Invasive Kirigami-Inspired Microelectrode Array for Deep Brain Recording</h1>
+        </section>
 
-        <p class="justified">My supervisor agreed to give me an exploratory project on subjects for which I initially had only superficial knowledge. 
-          However, projects are always opportunities to step outside one's comfort zone. 
-          This project aims to expand the theory of constant-weight codes used to minimize communication costs.
-          In both neuromorphic devices and biological systems, activating a neuron can be more costly than adding a new inactive unit.
-          The goal is to determine the impact of this factor on optimizing communication costs.
+        <section class="thesis-section compact">
+          <h2> </h2>
+          <dl class="dl-horizontal thesis-meta">
+            <dt>Supervisor</dt>
+            <dd>Prof. Todd Coleman, Prof. Zhenan Bao and Tomasz Zaluska</dd>
+            <dt>Institution</dt>
+            <dd>Stanford University</dd>
+          </dl>
+        </section>
+
+        <section class="thesis-section compact">
+          <h2>Abstract</h2>
+          <p class="justified">The ability to record neural activity directly from the human thalamic circuit will have major impact in advancing neuroscience, medical research, and brain-machine interface technologies. Yet, all currently available microelectrode arrays (MEAs) rely on the insertion of multiple electrodes from different sites, resulting in highly invasive procedures. In this report, we address this challenge by presenting a minimally invasive kirigami-shaped microelectrode array. Designed to expand after insertion, the device can be deployed against the wall of the third ventricle. To achieve this breakthrough, we extended the theoretical framework of bistable kirigami to engineer geometries that meet the strict constraints of neurosurgical application. Specifically, we introduced a novel bistable rotating-unit kirigami design with a zero Poisson ratio and establish a complete pipeline for optimizing its structure for flexible biocompatible materials.</p>
+        </section>
+
+        <section class="thesis-section">
+          <figure class="thesis-figure">
+            <img
+              src="img/Test_2233.png"
+              alt="Kirigami-inspired microelectrode array"
+            >
+            <figcaption>
+             <strong>Figure :</strong> 
+             Simulation (FEA) of the strain-energy curve, highliting bistability of the newly developped kirigami design.</figcaption>
+          </figure>
+        </section>
+
+        <section class="thesis-section">
+          <h2>Outcome</h2>
+          <p class="thesis-outcome-label">Scientific</p>
+          <ul>
+            <li>Publication: Coming soon...</li>
+            <li>Grade: 6</li>
+          </ul>
+
+          <p class="thesis-outcome-label">Personal</p>
+          <p class="justified">
+            My supervisor taught me a valuable lesson: sometimes, you need to put yourself in a position where you have no choice but to confront your knowledge gaps, only then can novel ideas emerge.
+          </p>
+        </section>
       </div>
     </div>
     
