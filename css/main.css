@@ -106,11 +106,13 @@ h4, h5, h6 {
 
 #projects .panel-heading {
   padding: 0;
-  background-size: cover;
+  aspect-ratio: 4 / 3;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: center;
+  background-color: white;
   width: 100%;
-  min-height: 200px;
+  min-height: 0;
 }
 
 #projects .panel-heading.proj-Thesis {
