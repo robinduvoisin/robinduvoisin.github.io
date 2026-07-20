@@ -91,11 +91,25 @@ h4, h5, h6 {
 }
 
 #projects {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0 !important;
+}
+
+#projects > [class*="col-"] {
+  display: flex;
+  float: none;
 }
 
 #projects .panel {
   border: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#projects .panel-body {
+  flex: 1;
 }
 
 #projects .panel-body h5 {
@@ -142,6 +156,12 @@ h4, h5, h6 {
 /*#projects .panel-heading.proj-3 {
   background-image: url(https://unsplash.it/300/200);
 }*/
+
+@media (max-width: 767px) {
+  #projects > [class*="col-"] {
+    width: 100%;
+  }
+}
 
 
 p, table, tr, td, ul, li, blockquote, nav, a, footer, dl, dt, dd {
