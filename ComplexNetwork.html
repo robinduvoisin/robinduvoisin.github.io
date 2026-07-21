@@ -35,6 +35,51 @@
       .justified {
         text-align: justify;
       }
+
+      .thesis-section {
+        margin-bottom: 3rem;
+      }
+
+      .thesis-section.compact {
+        margin-bottom: 2rem;
+      }
+
+      .thesis-section.compact h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem !important;
+      }
+
+      .thesis-meta {
+        margin-bottom: 0;
+      }
+
+      .thesis-meta dt {
+        color: var(--maroon);
+      }
+
+      .thesis-figure {
+        margin: 0 0 3rem;
+      }
+
+      .thesis-figure img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .thesis-figure figcaption {
+        color: slategray;
+        font-size: 0.9rem;
+        margin-top: 0.75rem;
+      }
+
+      .thesis-outcome-label {
+        color: slategray;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin: 1.5rem 0 0.75rem;
+      }
   </style>
 </head>
 
@@ -50,42 +95,44 @@
 
     <div class="row">
       <div class="col-sm-12">
+              
+        <section class="thesis-section">
+          <h1>Interconnected Multilayer Model to Highlight Condensation and Expansion Mechanisms in a Retinal Connectome</h1>
+        </section>
 
-        <h1>Interconnected Multilayer Model to Highlight Condensation and Expansion Mechanisms in a Retinal Connectome</h1>
-
-        <p class="justified">I had the opportunity to write an article following the PNAS template for the lecture on Complex Networks Theory and Applications by Prof. Bovet.
+        <section class="thesis-section compact">
+          <h2>Abstract</h2>
+          <p class="justified">
+          I had the opportunity to write an article following the PNAS template for the lecture on Complex Networks Theory and Applications by Prof. Bovet.
           The topic required focus on multilayer networks, and I chose to conduct brain network analysis.
           I further explored the dynamics within a retinal connectome to uncover information flow dynamics such as condensation and expansion mechanisms, through new algorithms I had to imagine
           to analyze this type of dense and interconnected network.
-          <p><em>Grade : 6 </em>
-        <p class="text-left">
-          <a id="link-to-docs" role="button" class="btn btn-default" href="pdf/Interconnected_Multilayer_Model_Retinal_Connectome.pdf" target="_blank">
-            <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; Read More
-          </a>
-        </p>
-      </div>
-      <div class="col-sm-6">
-          <img class="center-block img img-responsive" src="img/CN_Network.png"
-            alt="CN_network">
+          </p>
+        </section>
 
-          <p id="title">Retinal Multilayer Network<br>
-          </p>
-      </div>
-      <div class="col-sm-4">
-          <img class="center-block img img-responsive" src="img/CN_RichClub.png"
-            alt="CN_cells">
-          <p id="title">Information Flow Dynamics in the Connectome<br>
-          </p>
+        <section class="thesis-section">
+          <figure class="thesis-figure">
+            <img
+              src="img/CN_RichClub.png"
+              alt="Rich clubs in retinal connectome"
+            >
+            <figcaption>
+             <strong>Figure :</strong> 
+              Rich clubs nodes in the retinal connectome to highlight information flow.
+            </figcaption>
+          </figure>
+        </section>
+
+        <section class="thesis-section">
+          <h2>Outcome</h2>
+          <p class="thesis-outcome-label">Personal</p>
+          <p class="justified">
+          <li>Grade: 6</li>
+          <li>I appreciated the freedom to explore topics in this project and was proud of the results achieved in about 3 weeks, reflecting on my progress since my bachelor project.</li>
+          </section>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <h5>Personal Feedback</h5>
-
-        <p>I appreciated the freedom to explore topics in this project and was proud of the results achieved in about 3 weeks, reflecting on my progress since my bachelor project.</p>
-          </p>       
-      </div>
-    </div>
+    
 
   </div>
 
