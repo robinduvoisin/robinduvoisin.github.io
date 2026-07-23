@@ -53,6 +53,44 @@
     refreshTagFilter();
   }
 
+  document.getElementById("watchlist-export").addEventListener("click", function() {
+    var backup = new Blob([JSON.stringify(items, null, 2)], { type: "application/json" });
+    var url = URL.createObjectURL(backup);
+    var link = document.createElement("a");
+    link.href = url;
+    link.download = "robin-watchlist-backup.json";
+    link.click();
+    URL.revokeObjectURL(url);
+  });
+
+  document.getElementById("watchlist-import").addEventListener("change", function(event) {
+    var file = event.target.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function() {
+      try {
+        var importedItems = JSON.parse(reader.result);
+        if (!Array.isArray(importedItems) || importedItems.some(function(item) {
+          return !item || typeof item.title !== "string";
+        })) throw new Error("Invalid backup");
+        if (items.length && !window.confirm("Replace the current watchlist with this backup?")) return;
+        items = importedItems;
+        items.forEach(function(item) {
+          item.tags = Array.isArray(item.tags) ? item.tags : [];
+          item.comments = Array.isArray(item.comments) ? item.comments.filter(Boolean) : [];
+          item.lectureTotal = item.lectureTotal || 1;
+          item.lectureProgress = item.lectureProgress || 0;
+        });
+        save();
+        render();
+      } catch (error) {
+        window.alert("That file is not a valid watchlist backup.");
+      }
+      event.target.value = "";
+    };
+    reader.readAsText(file);
+  });
+
   function render() {
     var visibleItems = items.filter(function(item) {
       var statusMatches = currentFilter === "all" || (currentFilter === "completed" ? item.completed : !item.completed);

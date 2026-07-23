@@ -66,6 +66,14 @@
           </select>
         </div>
 
+        <div class="watchlist-backup form-group">
+          <button type="button" id="watchlist-export" class="btn btn-default btn-sm">Download backup</button>
+          <label for="watchlist-import" class="btn btn-default btn-sm">Import backup
+            <input id="watchlist-import" type="file" accept="application/json,.json" class="hidden">
+          </label>
+          <span class="text-muted">Transfer the downloaded JSON file to another device.</span>
+        </div>
+
         <section id="watchlist-items" aria-live="polite"></section>
 
         <section class="watchlist-form">
