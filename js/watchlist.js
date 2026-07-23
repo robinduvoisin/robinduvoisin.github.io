@@ -2,7 +2,7 @@
   "use strict";
 
   // Change this value to set the password for the private watchlist.
-  var watchlistPassword = "Letworks"; // I know it is not really protected
+  var watchlistPassword = "NoPassword"; // I know it is not really protected
   var gate = document.getElementById("watchlist-gate");
   var app = document.getElementById("watchlist-app");
   var passwordForm = document.getElementById("watchlist-password-form");
