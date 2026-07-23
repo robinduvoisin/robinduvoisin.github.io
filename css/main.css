@@ -255,6 +255,11 @@ blockquote footer {
   margin-bottom: 1.5rem;
 }
 
+.watchlist-tag-filter {
+  max-width: 260px;
+  margin-bottom: 1.5rem;
+}
+
 .watchlist-item {
   border: 1px solid #e3e3e3;
   border-left: 4px solid slategray;
@@ -290,6 +295,71 @@ blockquote footer {
   width: 1.1rem;
 }
 
+.watchlist-tag {
+  display: inline-block;
+  margin: .25rem .25rem 0 0;
+  padding: .2rem .55rem;
+  border-radius: 1rem;
+  background: #edf0f2;
+  color: #506578;
+  font-size: .8rem;
+}
+
+.watchlist-progress {
+  margin: .75rem 0;
+}
+
+.watchlist-progress input {
+  display: inline-block;
+  width: 70px;
+  margin: 0 .35rem;
+}
+
+.watchlist-actions {
+  margin-top: 1rem;
+}
+
+.watchlist-comments {
+  margin-top: 1rem;
+}
+
+.watchlist-comments textarea {
+  resize: vertical;
+}
+
+.watchlist-previous-comments {
+  margin-top: .75rem;
+  padding: .75rem 1rem;
+  border-left: 3px solid #d8d8d8;
+  background: #fafafa;
+  color: #506578;
+}
+
+.watchlist-previous-comments ul {
+  margin: .5rem 0 0;
+  padding-left: 1.5rem;
+}
+
+.watchlist-previous-comments li {
+  margin-bottom: .35rem;
+  font-size: .9rem;
+}
+
+.comment-edit-button {
+  padding: 0;
+}
+
+.comment-edit-input {
+  display: inline-block;
+  width: calc(100% - 1rem);
+  margin-bottom: .35rem;
+  resize: vertical;
+}
+
+.watchlist-edit-form {
+  margin-top: .5rem;
+}
+
 .watchlist-rating {
   display: inline-block;
   width: auto;
@@ -305,6 +375,16 @@ blockquote footer {
   border-top: 2px solid slategray;
   margin-top: 2.5rem;
   padding-top: 1.5rem;
+}
+
+.watchlist-password-form {
+  max-width: 360px;
+  margin-top: 2rem;
+}
+
+.watchlist-password-error {
+  margin-top: .75rem;
+  color: #a94442;
 }
 
 /* Contact info area, index.html page ------------------------------------------------- */

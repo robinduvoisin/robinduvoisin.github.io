@@ -21,7 +21,25 @@
   <div id="navbar-include"></div>
   <div class="spacer-div-3 hidden-xs"></div>
 
-  <main id="main-container" class="container">
+  <main id="watchlist-gate" class="container hidden">
+    <div class="row">
+      <div class="col-sm-12">
+        <h3><span>Private watchlist</span></h3>
+        <p>Enter the password to open this page.</p>
+        <form id="watchlist-password-form" class="watchlist-password-form">
+          <label for="watchlist-password">Password</label>
+          <div class="input-group">
+            <input id="watchlist-password" class="form-control" type="password" required autocomplete="current-password">
+            <span class="input-group-btn"><button class="btn btn-primary" type="submit">Open</button></span>
+          </div>
+          <p id="watchlist-password-error" class="watchlist-password-error hidden" role="alert">Incorrect password.</p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <main id="watchlist-app" class="hidden">
+  <div id="main-container" class="container">
     <div class="row">
       <div class="col-sm-12">
         <h3><span>Watchlist</span></h3>
@@ -41,6 +59,12 @@
             <span id="watchlist-count" class="text-muted"></span>
           </div>
         </div>
+        <div class="form-group watchlist-tag-filter">
+          <label for="tag-filter">Filter by tag</label>
+          <select id="tag-filter" class="form-control input-sm">
+            <option value="all">All tags</option>
+          </select>
+        </div>
 
         <section id="watchlist-items" aria-live="polite"></section>
 
@@ -57,6 +81,7 @@
                 <option>Article</option>
                 <option>Video</option>
                 <option>Book</option>
+                <option>Lecture</option>
                 <option>Other</option>
               </select>
             </div>
@@ -68,6 +93,18 @@
               <label for="item-notes">Notes <span class="text-muted">(optional)</span></label>
               <input id="item-notes" class="form-control" type="text" placeholder="Why do I want to read/watch this?">
             </div>
+            <div class="form-group col-sm-6">
+              <label for="item-tags">Tags <span class="text-muted">(optional, comma-separated)</span></label>
+              <input id="item-tags" class="form-control" type="text" placeholder="e.g. neuroscience, theory">
+            </div>
+            <div class="form-group col-sm-9">
+              <label for="item-comments">Comments <span class="text-muted">(optional)</span></label>
+              <textarea id="item-comments" class="form-control" rows="2" placeholder="What did I think about it?"></textarea>
+            </div>
+            <div class="form-group col-sm-3 lecture-only hidden">
+              <label for="item-lecture-total">Number of lectures</label>
+              <input id="item-lecture-total" class="form-control" type="number" min="1" value="1">
+            </div>
             <div class="form-group col-sm-3">
               <label>&nbsp;</label>
               <button class="btn btn-primary form-control" type="submit">Add to watchlist</button>
@@ -76,6 +113,7 @@
         </section>
       </div>
     </div>
+  </div>
   </main>
 
   <a role="button" id="topper" data-toggle="tooltip" data-placement="top" title="Top" class="btn scroll-link" href="#top"><i class="fa fa-fw fa-2x fa-caret-up" aria-hidden="true"></i></a>
