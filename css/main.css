@@ -230,6 +230,83 @@ blockquote footer {
   padding-bottom: 2px;
 }
 
+/* Personal watchlist --------------------------------------------------------- */
+.watchlist-shortcut {
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+}
+
+.watchlist-shortcut .btn {
+  color: var(--maroon);
+  border-color: #d8d8d8;
+  background: #fff;
+}
+
+.watchlist-shortcut .btn:hover {
+  border-bottom: 1px solid #d8d8d8 !important;
+  background: #f7f7f7;
+}
+
+.watchlist-intro {
+  margin-bottom: 2rem;
+}
+
+.watchlist-controls {
+  margin-bottom: 1.5rem;
+}
+
+.watchlist-item {
+  border: 1px solid #e3e3e3;
+  border-left: 4px solid slategray;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  background: #fff;
+}
+
+.watchlist-item.is-complete {
+  border-left-color: #718b72;
+  background: #fafcfa;
+}
+
+.watchlist-item.is-complete .watchlist-title {
+  text-decoration: line-through;
+  color: #718b72;
+}
+
+.watchlist-title {
+  margin: 0 0 .5rem;
+  color: var(--maroon);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.watchlist-meta {
+  color: #777;
+  font-size: .9rem;
+  margin-bottom: .75rem;
+}
+
+.watchlist-meta i {
+  width: 1.1rem;
+}
+
+.watchlist-rating {
+  display: inline-block;
+  width: auto;
+  margin-left: .5rem;
+}
+
+.watchlist-empty {
+  color: #777;
+  padding: 1rem 0;
+}
+
+.watchlist-form {
+  border-top: 2px solid slategray;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+}
+
 /* Contact info area, index.html page ------------------------------------------------- */
 #title {
   color: #20364c;

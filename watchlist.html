@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Watchlist | Robin Duvoisin</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/site.webmanifest">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div id="navbar-include"></div>
+  <div class="spacer-div-3 hidden-xs"></div>
+
+  <main id="main-container" class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h3><span>Watchlist</span></h3>
+        <p class="watchlist-intro">
+          Articles and videos I want to watch or read. Progress and ratings are saved in this browser.
+        </p>
+
+        <div class="row watchlist-controls">
+          <div class="col-sm-8">
+            <div class="btn-group" role="group" aria-label="Filter watchlist">
+              <button type="button" class="btn btn-default active" data-filter="all">All</button>
+              <button type="button" class="btn btn-default" data-filter="pending">To watch/read</button>
+              <button type="button" class="btn btn-default" data-filter="completed">Completed</button>
+            </div>
+          </div>
+          <div class="col-sm-4 text-right">
+            <span id="watchlist-count" class="text-muted"></span>
+          </div>
+        </div>
+
+        <section id="watchlist-items" aria-live="polite"></section>
+
+        <section class="watchlist-form">
+          <h5>Add an item</h5>
+          <form id="watchlist-form" class="row">
+            <div class="form-group col-sm-6">
+              <label for="item-title">Title</label>
+              <input id="item-title" class="form-control" type="text" required placeholder="e.g. A great lecture">
+            </div>
+            <div class="form-group col-sm-3">
+              <label for="item-type">Type</label>
+              <select id="item-type" class="form-control">
+                <option>Article</option>
+                <option>Video</option>
+                <option>Book</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group col-sm-3">
+              <label for="item-link">Link <span class="text-muted">(optional)</span></label>
+              <input id="item-link" class="form-control" type="url" placeholder="https://…">
+            </div>
+            <div class="form-group col-sm-9">
+              <label for="item-notes">Notes <span class="text-muted">(optional)</span></label>
+              <input id="item-notes" class="form-control" type="text" placeholder="Why do I want to read/watch this?">
+            </div>
+            <div class="form-group col-sm-3">
+              <label>&nbsp;</label>
+              <button class="btn btn-primary form-control" type="submit">Add to watchlist</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <a role="button" id="topper" data-toggle="tooltip" data-placement="top" title="Top" class="btn scroll-link" href="#top"><i class="fa fa-fw fa-2x fa-caret-up" aria-hidden="true"></i></a>
+  <div w3-include-html="footer.html"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="js/w3data.js"></script>
+  <script> w3IncludeHTML(); </script>
+  <script src="js/main.js"></script>
+  <script src="js/watchlist.js"></script>
+</body>
+
+</html>
