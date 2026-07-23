@@ -113,7 +113,7 @@
         '<div class="checkbox"><label><input type="checkbox" data-action="complete" data-id="' + item.id + '" ' + (item.completed ? "checked" : "") + '> ' +
           '<span class="watchlist-title">' + escapeHtml(item.title) + '</span></label></div>' +
         '<div class="watchlist-meta"><i class="fas fa-' + iconFor(item.type) + '" aria-hidden="true"></i> ' + escapeHtml(item.type) +
-          (item.link ? ' · <a href="' + escapeAttribute(item.link) + '" target="_blank" rel="noopener noreferrer">Open link</a>' : "") +
+          (safeLink(item.link) ? ' · <a href="' + escapeAttribute(safeLink(item.link)) + '" target="_blank" rel="noopener noreferrer">Open link</a>' : "") +
           (item.notes ? '<br><span>' + escapeHtml(item.notes) + '</span>' : "") +
           tagsHtml(item.tags) + '</div>' +
         (item.type === "Lecture" ? '<div class="watchlist-progress"><strong>Progress:</strong> lecture <input class="form-control input-sm" type="number" min="0" max="' + item.lectureTotal + '" value="' + item.lectureProgress + '" data-action="progress" data-id="' + item.id + '"> of ' + item.lectureTotal + '</div>' : "") +
@@ -154,6 +154,15 @@
 
   function escapeAttribute(value) {
     return escapeHtml(value).replace(/"/g, "&quot;");
+  }
+
+  function safeLink(value) {
+    try {
+      var url = new URL(value, window.location.href);
+      return url.protocol === "http:" || url.protocol === "https:" ? url.href : "";
+    } catch (error) {
+      return "";
+    }
   }
 
   list.addEventListener("change", function(event) {
